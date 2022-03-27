@@ -1,0 +1,127 @@
+/* Fuentes:
+	- Source Code Pro
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700&family=Source+Code+Pro:wght@300;400;700&family=Source+Sans+Pro:wght@300;400&display=swap");
+
+:root {
+	--bg-boton-numero: #f1f3f4;
+	--bg-boton-operacion: #c8c2bc;
+	--bg-boton-borrar: #ffc898;
+	--bg-boton-resultado: #4285f4;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: "Source Code Pro", Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+	height: 900px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.calculadora {
+	height: 400px;
+	width: 355px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid rgba(61, 56, 56, 0.1);
+	background-color: #3a3845;
+	border-radius: 10px;
+}
+
+.contenedor-calculadora {
+	width: 337px;
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.visor-calculadora {
+	background-color: #f1f3f4;
+	height: 80px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	border-radius: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 5px 10px;
+}
+
+.visor-calculo {
+	height: 20%;
+	width: 100%;
+	font-size: 13px;
+	color: #70757a;
+}
+
+.visor-resultado {
+	font-size: 30px;
+	height: auto;
+	width: 100%;
+}
+
+.botonera-calculadora {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
+	width: 337px;
+	height: 180px;
+}
+
+.boton-calculadora {
+	width: 80px;
+	height: 30px;
+	background-color: var(--bg-boton-numero);
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.boton-calculadora:hover {
+	cursor: pointer;
+}
+
+.numero {
+	background-color: var(--bg-boton-numero);
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.punto {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.operacion {
+	background-color: var(--bg-boton-operacion);
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.resultado {
+	background-color: var(--bg-boton-resultado);
+	font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+}
+
+.borrar {
+	background-color: var(--bg-boton-borrar);
+	font-size: 14px;
+}
+
+.espacio {
+	width: 165px;
+}
